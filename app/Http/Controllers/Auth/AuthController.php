@@ -40,6 +40,9 @@ class AuthController extends Controller
         return $this->respondWithToken($token);
     }
 
+    /**
+     * Register New user
+     */
     public function register(UserRegisterRequest $request)
     {
         return response()->json([
